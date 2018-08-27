@@ -8,6 +8,10 @@ if [ -d $HOME/server ]
 then
         rm -rf $HOME/server
 fi
+if [ ! -e $PREFIX/bin/git ]
+then
+        apt-get install git -y  
+fi
 git clone https://github.com/sachin175638/server1.git
 cd server1
 unzip server.zip
