@@ -12,6 +12,7 @@ msfvar=4.17.9
 msfpath='/data/data/com.termux/files/home'
 if [ -d "$msfpath/metasploit-framework" ]; then
 	echo "metasploit-framework already exist ... "
+        sleep 3
 	exit 1
 fi
 apt update
