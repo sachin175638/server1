@@ -12,6 +12,18 @@ msfvar=4.17.9
 msfpath='/data/data/com.termux/files/home'
 if [ -d "$msfpath/metasploit-framework" ]; then
 	echo "metasploit-framework already exist ... "
+        if [ -e $PREFIX/bin/msfvenom ]
+        then
+            rm $PREFIX/bin/msfvenom
+        fi
+        if [ -e $PREFIX/bin/msfconsole ]
+        then
+            rm $PREFIX/bin/msfconsole
+        fi
+        ln -s $HOME/metasploit-framework/msfconsole $PREFIX/bin/msfconsole
+        ln -s $HOME/metasploit-framework/msfvenom $PREFIX/bin/msfvenom
+        echo ""
+        echo "msfconsole and msfvenom fixed "
         sleep 3
 	exit 1
 fi
