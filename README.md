@@ -1,4 +1,4 @@
-# server1
+# server v 1.1
 cd server1
 unzip server.zp
 cd server
