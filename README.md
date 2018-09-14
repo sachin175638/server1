@@ -1,6 +1,6 @@
 
 
-# server v 1.2
+# server v 1.3
 fixed some bugs
 cd server1
 unzip server.zp
