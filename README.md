@@ -1,6 +1,7 @@
 
 
-# server v 1.4
+# server v 1.5
+fixed login credentials 
 fixed some bugs
 cd server1
 unzip server.zp
